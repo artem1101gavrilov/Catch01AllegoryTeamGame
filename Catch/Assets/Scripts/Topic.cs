@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Topic : MonoBehaviour
 {
-    public int topic = 2;
+    public int topic = 4;
     // Start is called before the first frame update
     void Start()
     {

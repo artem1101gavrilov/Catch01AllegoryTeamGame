@@ -112,6 +112,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &33898206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 33898208}
+  - component: {fileID: 33898207}
+  m_Layer: 0
+  m_Name: currency
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &33898207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33898206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a180a9016ed95ac4aa4949a0610591b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: 0
+--- !u!4 &33898208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33898206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.108712, y: 2.8557627, z: 452.01752}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &64643529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,10 +1143,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 882068963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a180a9016ed95ac4aa4949a0610591b7, type: 3}
+  m_Script: {fileID: 11500000, guid: cb794a815082f2c42a6db97f123a9bfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: 10
   coin: {fileID: 882068965}
 --- !u!1 &955941676
 GameObject:
@@ -1974,7 +2017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59f0a451ac6862640bb29242b256b44c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 882068967}
+  coin: {fileID: 0}
   topics: {fileID: 1460753894}
 --- !u!1 &1789222179
 GameObject:

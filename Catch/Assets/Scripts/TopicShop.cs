@@ -10,7 +10,7 @@ public class TopicShop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        topics = GameObject.Find("Topic").GetComponent<Topic>();
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class TopicShop : MonoBehaviour
         if (coin.coins > 9)
         {
             coin.coins -= 10;
-            topics.topic = 1;
+            topics.topic = 2;
         }
     }
 
@@ -41,12 +41,12 @@ public class TopicShop : MonoBehaviour
         if (coin.coins > 19)
         {
             coin.coins -= 20;
-            topics.topic = 1;
+            topics.topic = 3;
         }
     }
 
     public void ClickTopic4()
     {
-        topics.topic = 1;
+        topics.topic = 4;
     }
 }

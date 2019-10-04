@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class currency : MonoBehaviour
 {
     public int coins = 0;
-    public Text coin;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +15,5 @@ public class currency : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        string coins_text = coins.ToString();
-        coin.text = "Коины: " + coins_text;
     }
 }

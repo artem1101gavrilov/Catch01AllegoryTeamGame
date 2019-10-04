@@ -11,6 +11,7 @@ public class Game : MonoBehaviour {
     //InterstitialAd AdGame;
 
     private Topic topics;
+    private currency coins;
 
     private string app = "";
     private string Banner = "";
@@ -41,8 +42,9 @@ public class Game : MonoBehaviour {
     // Use this for initialization
     void Start () {
         FirstHod = false;
-        topics = GameObject.Find("topic").GetComponent<Topic>();
-            
+        topics = GameObject.Find("Topic").GetComponent<Topic>();
+        coins = GameObject.Find("currency").GetComponent<currency>();
+
         /*bannerV = new BannerView(Banner, AdSize.Banner, AdPosition.Top);
         AdRequest requestBanner = new AdRequest.Builder().Build();
         bannerV.LoadAd(requestBanner);
@@ -552,6 +554,8 @@ public class Game : MonoBehaviour {
             isFinish = true;
             Restart.transform.GetChild(0).gameObject.SetActive(true);
             Restart.SetActive(true);
+            coins.coins += 1;
+            PlayerPrefs.SetInt("coins", coins);
         }
     }
 
@@ -736,6 +740,6 @@ public class Game : MonoBehaviour {
     
     public void RestarGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
