@@ -10,7 +10,7 @@ public class Game : MonoBehaviour {
     //BannerView bannerV;
     //InterstitialAd AdGame;
 
-    public Topic topics;
+    private Topic topics;
 
     private string app = "";
     private string Banner = "";
@@ -41,7 +41,8 @@ public class Game : MonoBehaviour {
     // Use this for initialization
     void Start () {
         FirstHod = false;
-
+        topics = GameObject.Find("topic").GetComponent<Topic>();
+            
         /*bannerV = new BannerView(Banner, AdSize.Banner, AdPosition.Top);
         AdRequest requestBanner = new AdRequest.Builder().Build();
         bannerV.LoadAd(requestBanner);
