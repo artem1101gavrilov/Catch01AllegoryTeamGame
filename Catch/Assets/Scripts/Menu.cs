@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public GameObject Game;
-    public GameObject Skins;
-    public GameObject Graphic;
+    public GameObject Topics;
 
     // Start is called before the first frame update
     void Start()
@@ -17,19 +16,13 @@ public class Menu : MonoBehaviour
 
     public void ClickGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
-    public void ClickSkins()
+    public void ClickTopics()
     {
         Game.active = false;
-        Skins.active = true;
-    }
-
-    public void ClickGraphic()
-    {
-        Game.active = false;
-        Graphic.active = true;
+        Topics.active = true;
     }
 
     public void ClickExit()
@@ -40,7 +33,6 @@ public class Menu : MonoBehaviour
     public void ClickBack()
     {
         Game.active = true;
-        Skins.active = false;
-        Graphic.active = false;
+        Topics.active = false;
     }
 }

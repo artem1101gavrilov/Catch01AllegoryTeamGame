@@ -10,6 +10,8 @@ public class Game : MonoBehaviour {
     //BannerView bannerV;
     //InterstitialAd AdGame;
 
+    public Topic topics;
+
     private string app = "";
     private string Banner = "";
     private string AD = "";
@@ -75,30 +77,117 @@ public class Game : MonoBehaviour {
             {
                 if (j % 2 == 0)
                 {
-                    //Instantiate(hex, new Vector3(0.9f * i - 6f, 0.7f * j - 4f, 0), new Quaternion(), transform.GetChild(0).transform);
-                    //Для 1280 на 800
-                    //GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.7f * i - 6f, 0.57f * j - 4f, 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
-                    GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.835f * i - 4.5f, - 0.9f - (0.7f * j - 4f), 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
-                    h.name = (11 * i + j).ToString();
-                    h.transform.GetChild(0).gameObject.SetActive(false);
-                    h.transform.GetChild(1).gameObject.SetActive(false);
-                    if (Pole[i, j] == 1) h.transform.GetChild(0).gameObject.SetActive(true);
-                    if (Pole[i, j] == 2) h.transform.GetChild(1).gameObject.SetActive(true);
-                    h.GetComponent<Button>().onClick.AddListener(delegate { ClichHex(h); });
-                    //h.transform.SetParent(transform.GetChild(0).transform, false);
+                    if (topics.topic == 1)
+                    {
+                        //Instantiate(hex, new Vector3(0.9f * i - 6f, 0.7f * j - 4f, 0), new Quaternion(), transform.GetChild(0).transform);
+                        //Для 1280 на 800
+                        //GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.7f * i - 6f, 0.57f * j - 4f, 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        GameObject h = Instantiate(Resources.Load("Hex1"), new Vector3(0.835f * i - 4.5f, -0.9f - (0.7f * j - 4f), 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        h.name = (11 * i + j).ToString();
+                        h.transform.GetChild(0).gameObject.SetActive(false);
+                        h.transform.GetChild(1).gameObject.SetActive(false);
+                        if (Pole[i, j] == 1) h.transform.GetChild(0).gameObject.SetActive(true);
+                        if (Pole[i, j] == 2) h.transform.GetChild(1).gameObject.SetActive(true);
+                        h.GetComponent<Button>().onClick.AddListener(delegate { ClichHex(h); });
+                        //h.transform.SetParent(transform.GetChild(0).transform, false);
+                    }
+                    if (topics.topic == 2)
+                    {
+                        //Instantiate(hex, new Vector3(0.9f * i - 6f, 0.7f * j - 4f, 0), new Quaternion(), transform.GetChild(0).transform);
+                        //Для 1280 на 800
+                        //GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.7f * i - 6f, 0.57f * j - 4f, 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        GameObject h = Instantiate(Resources.Load("Hex2"), new Vector3(0.835f * i - 4.5f, -0.9f - (0.7f * j - 4f), 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        h.name = (11 * i + j).ToString();
+                        h.transform.GetChild(0).gameObject.SetActive(false);
+                        h.transform.GetChild(1).gameObject.SetActive(false);
+                        if (Pole[i, j] == 1) h.transform.GetChild(0).gameObject.SetActive(true);
+                        if (Pole[i, j] == 2) h.transform.GetChild(1).gameObject.SetActive(true);
+                        h.GetComponent<Button>().onClick.AddListener(delegate { ClichHex(h); });
+                        //h.transform.SetParent(transform.GetChild(0).transform, false);
+                    }
+                    if (topics.topic == 3)
+                    {
+                        //Instantiate(hex, new Vector3(0.9f * i - 6f, 0.7f * j - 4f, 0), new Quaternion(), transform.GetChild(0).transform);
+                        //Для 1280 на 800
+                        //GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.7f * i - 6f, 0.57f * j - 4f, 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        GameObject h = Instantiate(Resources.Load("Hex3"), new Vector3(0.835f * i - 4.5f, -0.9f - (0.7f * j - 4f), 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        h.name = (11 * i + j).ToString();
+                        h.transform.GetChild(0).gameObject.SetActive(false);
+                        h.transform.GetChild(1).gameObject.SetActive(false);
+                        if (Pole[i, j] == 1) h.transform.GetChild(0).gameObject.SetActive(true);
+                        if (Pole[i, j] == 2) h.transform.GetChild(1).gameObject.SetActive(true);
+                        h.GetComponent<Button>().onClick.AddListener(delegate { ClichHex(h); });
+                        //h.transform.SetParent(transform.GetChild(0).transform, false);
+                    }
+                    if (topics.topic == 4)
+                    {
+                        //Instantiate(hex, new Vector3(0.9f * i - 6f, 0.7f * j - 4f, 0), new Quaternion(), transform.GetChild(0).transform);
+                        //Для 1280 на 800
+                        //GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.7f * i - 6f, 0.57f * j - 4f, 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        GameObject h = Instantiate(Resources.Load("Hex4"), new Vector3(0.835f * i - 4.5f, -0.9f - (0.7f * j - 4f), 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        h.name = (11 * i + j).ToString();
+                        h.transform.GetChild(0).gameObject.SetActive(false);
+                        h.transform.GetChild(1).gameObject.SetActive(false);
+                        if (Pole[i, j] == 1) h.transform.GetChild(0).gameObject.SetActive(true);
+                        if (Pole[i, j] == 2) h.transform.GetChild(1).gameObject.SetActive(true);
+                        h.GetComponent<Button>().onClick.AddListener(delegate { ClichHex(h); });
+                        //h.transform.SetParent(transform.GetChild(0).transform, false);
+                    }
                 }
                 else
                 {
-                    //Для 1280 на 800
-                    //GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.7f * i - 6f + 0.35f, 0.57f * j - 4f, 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
-                    GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.835f * i - 4.5f + 0.395f, - 0.9f - (0.7f * j - 4f), 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
-                    h.name = (11 * i + j).ToString();
-                    h.transform.GetChild(0).gameObject.SetActive(false);
-                    h.transform.GetChild(1).gameObject.SetActive(false);
-                    if (Pole[i, j] == 1) h.transform.GetChild(0).gameObject.SetActive(true);
-                    if (Pole[i, j] == 2) h.transform.GetChild(1).gameObject.SetActive(true);
-                    h.GetComponent<Button>().onClick.AddListener(delegate { ClichHex(h); });
-                    //h.transform.SetParent(transform.GetChild(0).transform, false);
+                    if (topics.topic == 1)
+                    {
+                        //Для 1280 на 800
+                        //GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.7f * i - 6f + 0.35f, 0.57f * j - 4f, 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        GameObject h = Instantiate(Resources.Load("Hex1"), new Vector3(0.835f * i - 4.5f + 0.395f, -0.9f - (0.7f * j - 4f), 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        h.name = (11 * i + j).ToString();
+                        h.transform.GetChild(0).gameObject.SetActive(false);
+                        h.transform.GetChild(1).gameObject.SetActive(false);
+                        if (Pole[i, j] == 1) h.transform.GetChild(0).gameObject.SetActive(true);
+                        if (Pole[i, j] == 2) h.transform.GetChild(1).gameObject.SetActive(true);
+                        h.GetComponent<Button>().onClick.AddListener(delegate { ClichHex(h); });
+                        //h.transform.SetParent(transform.GetChild(0).transform, false);
+                    }
+                    if (topics.topic == 2)
+                    {
+                        //Для 1280 на 800
+                        //GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.7f * i - 6f + 0.35f, 0.57f * j - 4f, 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        GameObject h = Instantiate(Resources.Load("Hex2"), new Vector3(0.835f * i - 4.5f + 0.395f, -0.9f - (0.7f * j - 4f), 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        h.name = (11 * i + j).ToString();
+                        h.transform.GetChild(0).gameObject.SetActive(false);
+                        h.transform.GetChild(1).gameObject.SetActive(false);
+                        if (Pole[i, j] == 1) h.transform.GetChild(0).gameObject.SetActive(true);
+                        if (Pole[i, j] == 2) h.transform.GetChild(1).gameObject.SetActive(true);
+                        h.GetComponent<Button>().onClick.AddListener(delegate { ClichHex(h); });
+                        //h.transform.SetParent(transform.GetChild(0).transform, false);
+                    }
+                    if (topics.topic == 3)
+                    {
+                        //Для 1280 на 800
+                        //GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.7f * i - 6f + 0.35f, 0.57f * j - 4f, 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        GameObject h = Instantiate(Resources.Load("Hex3"), new Vector3(0.835f * i - 4.5f + 0.395f, -0.9f - (0.7f * j - 4f), 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        h.name = (11 * i + j).ToString();
+                        h.transform.GetChild(0).gameObject.SetActive(false);
+                        h.transform.GetChild(1).gameObject.SetActive(false);
+                        if (Pole[i, j] == 1) h.transform.GetChild(0).gameObject.SetActive(true);
+                        if (Pole[i, j] == 2) h.transform.GetChild(1).gameObject.SetActive(true);
+                        h.GetComponent<Button>().onClick.AddListener(delegate { ClichHex(h); });
+                        //h.transform.SetParent(transform.GetChild(0).transform, false);
+                    }
+                    if (topics.topic == 4)
+                    {
+                        //Для 1280 на 800
+                        //GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.7f * i - 6f + 0.35f, 0.57f * j - 4f, 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        GameObject h = Instantiate(Resources.Load("Hex4"), new Vector3(0.835f * i - 4.5f + 0.395f, -0.9f - (0.7f * j - 4f), 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        h.name = (11 * i + j).ToString();
+                        h.transform.GetChild(0).gameObject.SetActive(false);
+                        h.transform.GetChild(1).gameObject.SetActive(false);
+                        if (Pole[i, j] == 1) h.transform.GetChild(0).gameObject.SetActive(true);
+                        if (Pole[i, j] == 2) h.transform.GetChild(1).gameObject.SetActive(true);
+                        h.GetComponent<Button>().onClick.AddListener(delegate { ClichHex(h); });
+                        //h.transform.SetParent(transform.GetChild(0).transform, false);
+                    }
                 }
             }
         }
