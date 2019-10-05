@@ -17,6 +17,6 @@ public class currency_text : MonoBehaviour
 	
 	public void UpdateCoinText()
 	{
-		coin.text = "Коины: " + cur.coins.ToString();
+		coin.text = cur.coins.ToString();
 	}
 }
