@@ -251,8 +251,8 @@ public class Game : MonoBehaviour {
                         {
                             Pole[PosPandaX, PosPandaY] = 0;
                             Pole[PosPandaX - 1, PosPandaY] = 1;
-                            transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                            transform.GetChild(0).transform.FindChild((11 * (PosPandaX - 1) + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                            transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                            transform.GetChild(0).transform.Find((11 * (PosPandaX - 1) + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                             PosPandaX--;
                             isHod = false;
                         }
@@ -266,8 +266,8 @@ public class Game : MonoBehaviour {
                         {
                             Pole[PosPandaX, PosPandaY] = 0;
                             Pole[PosPandaX + 1, PosPandaY] = 1;
-                            transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                            transform.GetChild(0).transform.FindChild((11 * (PosPandaX + 1) + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                            transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                            transform.GetChild(0).transform.Find((11 * (PosPandaX + 1) + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                             PosPandaX++;
                             isHod = false;
                         }
@@ -281,8 +281,8 @@ public class Game : MonoBehaviour {
                         {
                             Pole[PosPandaX, PosPandaY] = 0;
                             Pole[PosPandaX, PosPandaY + 1] = 1;
-                            transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                            transform.GetChild(0).transform.FindChild((11 * (PosPandaX) + PosPandaY + 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                            transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                            transform.GetChild(0).transform.Find((11 * (PosPandaX) + PosPandaY + 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                             PosPandaY++;
                             isHod = false;
                         }
@@ -296,8 +296,8 @@ public class Game : MonoBehaviour {
                         {
                             Pole[PosPandaX, PosPandaY] = 0;
                             Pole[PosPandaX, PosPandaY - 1] = 1;
-                            transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                            transform.GetChild(0).transform.FindChild((11 * (PosPandaX) + PosPandaY - 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                            transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                            transform.GetChild(0).transform.Find((11 * (PosPandaX) + PosPandaY - 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                             PosPandaY--;
                             isHod = false;
                         }
@@ -311,8 +311,8 @@ public class Game : MonoBehaviour {
                         {
                             Pole[PosPandaX, PosPandaY] = 0;
                             Pole[PosPandaX + 1, PosPandaY + 1] = 1;
-                            transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                            transform.GetChild(0).transform.FindChild((11 * (PosPandaX + 1) + PosPandaY + 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                            transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                            transform.GetChild(0).transform.Find((11 * (PosPandaX + 1) + PosPandaY + 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                             PosPandaY++;
                             PosPandaX++;
                             isHod = false;
@@ -326,8 +326,8 @@ public class Game : MonoBehaviour {
                         {
                             Pole[PosPandaX, PosPandaY] = 0;
                             Pole[PosPandaX + 1, PosPandaY - 1] = 1;
-                            transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                            transform.GetChild(0).transform.FindChild((11 * (PosPandaX + 1) + PosPandaY - 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                            transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                            transform.GetChild(0).transform.Find((11 * (PosPandaX + 1) + PosPandaY - 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                             PosPandaY--;
                             PosPandaX++;
                             isHod = false;
@@ -357,8 +357,8 @@ public class Game : MonoBehaviour {
                         {
                             Pole[PosPandaX, PosPandaY] = 0;
                             Pole[PosPandaX - 1, PosPandaY] = 1;
-                            transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                            transform.GetChild(0).transform.FindChild((11 * (PosPandaX - 1) + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                            transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                            transform.GetChild(0).transform.Find((11 * (PosPandaX - 1) + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                             PosPandaX--;
                             isHod = false;
                         }
@@ -372,8 +372,8 @@ public class Game : MonoBehaviour {
                         {
                             Pole[PosPandaX, PosPandaY] = 0;
                             Pole[PosPandaX + 1, PosPandaY] = 1;
-                            transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                            transform.GetChild(0).transform.FindChild((11 * (PosPandaX + 1) + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                            transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                            transform.GetChild(0).transform.Find((11 * (PosPandaX + 1) + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                             PosPandaX++;
                             isHod = false;
                         }
@@ -387,8 +387,8 @@ public class Game : MonoBehaviour {
                         {
                             Pole[PosPandaX, PosPandaY] = 0;
                             Pole[PosPandaX, PosPandaY + 1] = 1;
-                            transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                            transform.GetChild(0).transform.FindChild((11 * (PosPandaX) + PosPandaY + 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                            transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                            transform.GetChild(0).transform.Find((11 * (PosPandaX) + PosPandaY + 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                             PosPandaY++;
                             isHod = false;
                         }
@@ -402,8 +402,8 @@ public class Game : MonoBehaviour {
                         {
                             Pole[PosPandaX, PosPandaY] = 0;
                             Pole[PosPandaX, PosPandaY - 1] = 1;
-                            transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                            transform.GetChild(0).transform.FindChild((11 * (PosPandaX) + PosPandaY - 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                            transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                            transform.GetChild(0).transform.Find((11 * (PosPandaX) + PosPandaY - 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                             PosPandaY--;
                             isHod = false;
                         }
@@ -417,8 +417,8 @@ public class Game : MonoBehaviour {
                         {
                             Pole[PosPandaX, PosPandaY] = 0;
                             Pole[PosPandaX - 1, PosPandaY - 1] = 1;
-                            transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                            transform.GetChild(0).transform.FindChild((11 * (PosPandaX - 1) + PosPandaY - 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                            transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                            transform.GetChild(0).transform.Find((11 * (PosPandaX - 1) + PosPandaY - 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                             PosPandaY--;
                             PosPandaX--;
                             isHod = false;
@@ -432,8 +432,8 @@ public class Game : MonoBehaviour {
                         {
                             Pole[PosPandaX, PosPandaY] = 0;
                             Pole[PosPandaX - 1, PosPandaY + 1] = 1;
-                            transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                            transform.GetChild(0).transform.FindChild((11 * (PosPandaX - 1) + PosPandaY + 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                            transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                            transform.GetChild(0).transform.Find((11 * (PosPandaX - 1) + PosPandaY + 1).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                             PosPandaY++;
                             PosPandaX--;
                             isHod = false;
@@ -615,8 +615,8 @@ public class Game : MonoBehaviour {
                 //AdGame.Show();
                 Pole[PosPandaX, PosPandaY] = 0;
                 Pole[MaxHodX, MaxHodY] = 1;
-                transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                transform.GetChild(0).transform.FindChild((11 * (MaxHodX) + MaxHodY).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                transform.GetChild(0).transform.Find((11 * (MaxHodX) + MaxHodY).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                 //transform.GetChild(1).transform.position = transform.GetChild(0).transform.GetChild(11 * (MaxHodX) + MaxHodY).transform.GetChild(0).transform.position;
                 //transform.GetChild(1).transform.position = new Vector2(transform.GetChild(1).transform.position.x,
                 //                                                        transform.GetChild(1).transform.position.y + 0.3f);
@@ -727,8 +727,8 @@ public class Game : MonoBehaviour {
                 }
                 Pole[PosPandaX, PosPandaY] = 0;
                 Pole[MaxHodX, MaxHodY] = 1;
-                transform.GetChild(0).transform.FindChild((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
-                transform.GetChild(0).transform.FindChild((11 * (MaxHodX) + MaxHodY).ToString()).transform.GetChild(0).gameObject.SetActive(true);
+                transform.GetChild(0).transform.Find((11 * PosPandaX + PosPandaY).ToString()).transform.GetChild(0).gameObject.SetActive(false);
+                transform.GetChild(0).transform.Find((11 * (MaxHodX) + MaxHodY).ToString()).transform.GetChild(0).gameObject.SetActive(true);
                 //transform.GetChild(1).transform.position = transform.GetChild(0).transform.GetChild(11 * (MaxHodX) + MaxHodY).transform.GetChild(0).transform.position;
                 //transform.GetChild(1).transform.position = new Vector2(transform.GetChild(1).transform.position.x,
                 //                                                        transform.GetChild(1).transform.position.y + 0.3f);
