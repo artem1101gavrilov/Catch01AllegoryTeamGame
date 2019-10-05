@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: 5f999c8b17c163a4bab381d27fbe0002
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+      \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_0"
+    21300002: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+      \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_1"
+    21300004: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+      \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_2"
+    21300006: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+      \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_4"
+    21300008: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+      \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_5"
+    21300010: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+      \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_9"
+    21300012: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+      \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_14"
+    21300014: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+      \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_19"
+    21300016: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+      \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_20"
+    21300018: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+      \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_24"
+    21300020: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+      \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_3"
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+        \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_0"
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 801
+        width: 351
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe7f0132bce38e41b312595571be524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+        \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_1"
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 616
+        width: 271
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a431adc7dde1eb74a8ffad200649557a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+        \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_2"
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 868
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14afbc5a0b7f1d489d0aabfb7e33977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+        \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_4"
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 878
+        width: 75
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19113c7816f42ac46b1643ab55ef839a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+        \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_5"
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 853
+        width: 74
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05b47b812588ba4db99ab30312cbfd6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+        \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_9"
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 686
+        width: 126
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a031701e4c6df364ead3f043fb5e7510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+        \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_14"
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 725
+        width: 126
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb257e61ab0c3c41a3bd513a1f65451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+        \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_19"
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 344
+        width: 248
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480a811aacf38274a84477be3693faea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+        \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_20"
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 561
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa2d6b2dfa2342419cbd777d05d43b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+        \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_24"
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 118
+        width: 351
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e331044a81b06e740a083250f2dfda4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Catch the panda_\u041C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F
+        \u043E\u0431\u043B\u0430\u0441\u0442\u044C 1_3"
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 344
+        width: 361
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16176cce714d314aa5e492778385c90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a463ea5c5d0e7ae42a8bbb259fa7effb
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
