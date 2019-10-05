@@ -13,9 +13,9 @@ public class Game : MonoBehaviour {
     private Topic topics;
     private currency coins;
 
-    private string app = "";
-    private string Banner = "";
-    private string AD = "";
+    //private string app = "";
+    //private string Banner = "";
+    //private string AD = "";
 
     /* Что означают цифры в поле
      * 0 - пустота
@@ -555,7 +555,7 @@ public class Game : MonoBehaviour {
             Restart.transform.GetChild(0).gameObject.SetActive(true);
             Restart.SetActive(true);
             coins.coins += 1;
-            PlayerPrefs.SetInt("coins", coins);
+            PlayerPrefs.SetInt("coins", coins.coins);
         }
     }
 
@@ -742,4 +742,9 @@ public class Game : MonoBehaviour {
     {
         SceneManager.LoadScene(1);
     }
+	
+	public void BackToMenu()
+	{
+		SceneManager.LoadScene(0);
+	}
 }

@@ -2,29 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TopicShop : MonoBehaviour
 {
-    public currency coin;
-    public Topic topics;
-    // Start is called before the first frame update
+    private currency coin;
+    private Topic topics;
+	public currency_text _currency_text;
+	
     void Start()
     {
         topics = GameObject.Find("Topic").GetComponent<Topic>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+		coin = GameObject.Find("currency").GetComponent<currency>();
+		
+		for(int i = 0; i < 4; ++i)
+		{
+			transform.GetChild(i + 1).GetComponent<Image>().color = topics.boughtAllTopics[i] ? new Color(0, 1, 0, 1) : new Color(1, 1, 1, 1);
+		}
     }
 
     public void ClickTopic1()
     {
-        if (coin.coins > 4)
+        if (coin.coins > 4 && !topics.boughtAllTopics[0])
         {
             coin.coins -= 5;
             topics.topic = 1;
+			PlayerPrefs.SetInt("coins", coin.coins);
+			topics.boughtAllTopics[0] = true;
+			topics.SaveTopics();
+			PlayerPrefs.SetInt("topic", 1);
+			transform.GetChild(1).GetComponent<Image>().color = new Color(0, 1, 0, 1);
+			_currency_text.UpdateCoinText();
         }
+		else if(topics.boughtAllTopics[0])
+		{
+			topics.topic = 1;
+			PlayerPrefs.SetInt("topic", 1);
+		}
     }
 
     public void ClickTopic2()
@@ -33,7 +47,18 @@ public class TopicShop : MonoBehaviour
         {
             coin.coins -= 10;
             topics.topic = 2;
+			PlayerPrefs.SetInt("coins", coin.coins);
+			topics.boughtAllTopics[1] = true;
+			topics.SaveTopics();
+			PlayerPrefs.SetInt("topic", 2);
+			transform.GetChild(2).GetComponent<Image>().color = new Color(0, 1, 0, 1);
+			_currency_text.UpdateCoinText();
         }
+		else if(topics.boughtAllTopics[1])
+		{
+			topics.topic = 2;
+			PlayerPrefs.SetInt("topic", 2);
+		}
     }
 
     public void ClickTopic3()
@@ -42,11 +67,23 @@ public class TopicShop : MonoBehaviour
         {
             coin.coins -= 20;
             topics.topic = 3;
+			PlayerPrefs.SetInt("coins", coin.coins);
+			topics.boughtAllTopics[2] = true;
+			topics.SaveTopics();
+			PlayerPrefs.SetInt("topic", 3);
+			transform.GetChild(3).GetComponent<Image>().color = new Color(0, 1, 0, 1);
+			_currency_text.UpdateCoinText();
         }
+		else if(topics.boughtAllTopics[2])
+		{
+			topics.topic = 3;
+			PlayerPrefs.SetInt("topic", 3);
+		}
     }
 
     public void ClickTopic4()
     {
         topics.topic = 4;
+		PlayerPrefs.SetInt("topic", 4);
     }
 }

@@ -5,19 +5,18 @@ using UnityEngine.UI;
 
 public class currency_text : MonoBehaviour
 {
-    public Text coin;
+    Text coin;
     private currency cur;
     // Start is called before the first frame update
     void Start()
     {
+		coin = GetComponent<Text>();
         cur = GameObject.Find("currency").GetComponent<currency>();
+        UpdateCoinText();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        int coins = cur.coins;
-        string coins_text = coins.ToString();
-        coin.text = "Коины: " + coins_text;
-    }
+	
+	public void UpdateCoinText()
+	{
+		coin.text = "Коины: " + cur.coins.ToString();
+	}
 }

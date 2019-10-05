@@ -6,14 +6,23 @@ using UnityEngine.UI;
 public class currency : MonoBehaviour
 {
     public int coins = 0;
-    // Start is called before the first frame update
+	static currency _currency;
+	
+	void Awake()
+	{
+		coins = PlayerPrefs.GetInt("coins", 0);
+	}
+	
     void Start()
     {
-        DontDestroyOnLoad(this);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+		if(_currency == null)
+		{
+			_currency = this;
+			DontDestroyOnLoad(this);
+		}
+        else
+		{
+			Destroy(gameObject);
+		}
     }
 }

@@ -8,12 +8,6 @@ public class Menu : MonoBehaviour
     public GameObject Game;
     public GameObject Topics;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     public void ClickGame()
     {
         SceneManager.LoadScene(1);
@@ -21,8 +15,8 @@ public class Menu : MonoBehaviour
 
     public void ClickTopics()
     {
-        Game.active = false;
-        Topics.active = true;
+        Game.SetActive(false);
+        Topics.SetActive(true);
     }
 
     public void ClickExit()
@@ -32,7 +26,7 @@ public class Menu : MonoBehaviour
 
     public void ClickBack()
     {
-        Game.active = true;
-        Topics.active = false;
+        Game.SetActive(true);
+        Topics.SetActive(false);
     }
 }

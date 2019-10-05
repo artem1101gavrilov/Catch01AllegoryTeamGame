@@ -1146,7 +1146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb794a815082f2c42a6db97f123a9bfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 882068965}
 --- !u!1 &955941676
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,7 +1948,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8088d83240910324b86e5edb8e875bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topic: 2
+  topic: 4
+  boughtAllTopics: 
 --- !u!4 &1460753895
 Transform:
   m_ObjectHideFlags: 0
@@ -2017,8 +2017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59f0a451ac6862640bb29242b256b44c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 0}
-  topics: {fileID: 1460753894}
+  _currency_text: {fileID: 882068967}
 --- !u!1 &1789222179
 GameObject:
   m_ObjectHideFlags: 0
