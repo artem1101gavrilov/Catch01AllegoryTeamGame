@@ -124,17 +124,18 @@ public class Game : MonoBehaviour {
                     }
                     if (topics.topic == 4)
                     {
-                        //Instantiate(hex, new Vector3(0.9f * i - 6f, 0.7f * j - 4f, 0), new Quaternion(), transform.GetChild(0).transform);
-                        //Для 1280 на 800
-                        //GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.7f * i - 6f, 0.57f * j - 4f, 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
-                        GameObject h = Instantiate(Resources.Load("Hex4"), new Vector3(0.835f * i - 4.5f, -0.9f - (0.7f * j - 4f), 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
-                        h.name = (11 * i + j).ToString();
+                        GameObject h = Instantiate(Resources.Load("Hex4"), 
+													new Vector3(142 * i - 462, 39 * j - 323, 0), 
+													Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+                        
+						h.transform.localPosition = new Vector3(- 80 * i + 462, - 70 * j + 260, 0);
+						h.transform.localRotation = Quaternion.Euler(0, 0, 90.001f);
+						h.name = (11 * i + j).ToString();
                         h.transform.GetChild(0).gameObject.SetActive(false);
                         h.transform.GetChild(1).gameObject.SetActive(false);
                         if (Pole[i, j] == 1) h.transform.GetChild(0).gameObject.SetActive(true);
                         if (Pole[i, j] == 2) h.transform.GetChild(1).gameObject.SetActive(true);
                         h.GetComponent<Button>().onClick.AddListener(delegate { ClichHex(h); });
-                        //h.transform.SetParent(transform.GetChild(0).transform, false);
                     }
                 }
                 else
@@ -182,8 +183,13 @@ public class Game : MonoBehaviour {
                     {
                         //Для 1280 на 800
                         //GameObject h = Instantiate(Resources.Load("Hex"), new Vector3(0.7f * i - 6f + 0.35f, 0.57f * j - 4f, 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
-                        GameObject h = Instantiate(Resources.Load("Hex4"), new Vector3(0.835f * i - 4.5f + 0.395f, -0.9f - (0.7f * j - 4f), 0), Quaternion.identity, transform.GetChild(0).transform) as GameObject;
-                        h.name = (11 * i + j).ToString();
+                        GameObject h = Instantiate(Resources.Load("Hex4"), 
+													new Vector3(142 * i - 462 + 71, 39 * j - 323, 0), 
+													Quaternion.identity, transform.GetChild(0).transform) as GameObject;
+						
+						h.transform.localPosition = new Vector3(- 80 * i + 422, - 70 * j + 260, 0);
+						h.transform.localRotation = Quaternion.Euler(0, 0, 90.001f);
+						h.name = (11 * i + j).ToString();
                         h.transform.GetChild(0).gameObject.SetActive(false);
                         h.transform.GetChild(1).gameObject.SetActive(false);
                         if (Pole[i, j] == 1) h.transform.GetChild(0).gameObject.SetActive(true);
