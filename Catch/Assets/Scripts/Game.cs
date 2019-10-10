@@ -129,7 +129,7 @@ public class Game : MonoBehaviour {
 													Quaternion.identity, transform.GetChild(0).transform) as GameObject;
                         
 						h.transform.localPosition = new Vector3(- 80 * i + 462, - 70 * j + 260, 0);
-						h.transform.localRotation = Quaternion.Euler(0, 0, 90.001f);
+						//h.transform.localRotation = Quaternion.Euler(0, 0, 90.001f);
 						h.name = (11 * i + j).ToString();
                         h.transform.GetChild(0).gameObject.SetActive(false);
                         h.transform.GetChild(1).gameObject.SetActive(false);
@@ -188,7 +188,7 @@ public class Game : MonoBehaviour {
 													Quaternion.identity, transform.GetChild(0).transform) as GameObject;
 						
 						h.transform.localPosition = new Vector3(- 80 * i + 422, - 70 * j + 260, 0);
-						h.transform.localRotation = Quaternion.Euler(0, 0, 90.001f);
+						//h.transform.localRotation = Quaternion.Euler(0, 0, 90.001f);
 						h.name = (11 * i + j).ToString();
                         h.transform.GetChild(0).gameObject.SetActive(false);
                         h.transform.GetChild(1).gameObject.SetActive(false);
